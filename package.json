@@ -11,14 +11,17 @@
     "@types/jest": "^23.3.2",
     "jest": "^23.6.0",
     "ts-jest": "^23.10.1",
+    "tslint": "^5.11.0",
     "typescript": "^3.0.3"
   },
   "scripts": {
     "clean-build": "rm -rf build",
     "build-typescript": "tsc -p . --outDir ./build",
+    "build": "yarn clean-build && yarn build-typescript",
     "watch-typescript": "tsc -p . --outDir ./build --watch --pretty",
     "watch": "yarn clean-build && yarn build-typescript && (yarn watch-typescript)",
     "test": "jest test/test.ts",
-    "watch-test": "jest test/test.ts --watch"
+    "watch-test": "jest test/test.ts --watch",
+    "lint": "tslint -c tslint.json -p ."
   }
 }
