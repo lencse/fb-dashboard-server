@@ -1,0 +1,10 @@
+{
+  "name": "fb-dashboard-server",
+  "version": "1.0.0",
+  "description": "FB Dashboard Server",
+  "main": "server.js",
+  "repository": "https://github.com/lencse/fb-dashboard-server",
+  "author": "Levente Löki <leventeloki@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
