@@ -16,7 +16,7 @@ export default class KoaWebServer implements WebServer {
 
     public run(): void {
         this.router.get('/data', async (ctx, next) => {
-            ctx.body = { ok: 1}
+            ctx.body = { ok: true }
         })
 
         this.koa

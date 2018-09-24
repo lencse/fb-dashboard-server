@@ -1,6 +1,6 @@
 import Server from './Server/Server'
 import KoaWebServer from './Adapter/KoaWebServer'
 
-export function run() {
-    new Server(new KoaWebServer()).run()
+export function server(): Server {
+    return new Server(new KoaWebServer())
 }
