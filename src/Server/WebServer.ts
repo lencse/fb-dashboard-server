@@ -1,4 +1,4 @@
-export default interface WebServer {
+export default interface Webserver {
 
     run(): void
 

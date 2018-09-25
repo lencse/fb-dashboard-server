@@ -1,11 +1,15 @@
 import Server from '../../../src/Server/Server'
-import MockWebServer from './Mock/MockWebServer'
 
 describe('Server', () => {
     it('Server is starting webserver', () => {
-        const webserver = new MockWebServer()
+        const webserver = {
+            started: false,
+            run(): void {
+                this.started = true
+            },
+        }
         const server = new Server(webserver)
         server.run()
-        expect(webserver.isStarted()).toBe(true)
+        expect(webserver.started).toBe(true)
     })
 })

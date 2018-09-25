@@ -9,10 +9,12 @@
   "private": false,
   "dependencies": {
     "dotenv": "^6.0.0",
+    "inversify": "^4.13.0",
     "koa": "^2.5.3",
     "koa-json": "^2.0.2",
     "koa-router": "^7.4.0",
-    "koa-static": "^5.0.0"
+    "koa-static": "^5.0.0",
+    "reflect-metadata": "^0.1.12"
   },
   "devDependencies": {
     "@types/jest": "^23.3.2",
@@ -20,6 +22,7 @@
     "@types/koa-json": "^2.0.18",
     "@types/koa-router": "^7.0.32",
     "@types/koa-static": "^4.0.0",
+    "@types/reflect-metadata": "^0.1.0",
     "jest": "^23.6.0",
     "nodemon": "^1.18.4",
     "ts-jest": "^23.10.1",

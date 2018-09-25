@@ -1,9 +1,12 @@
-import WebServer from '../Server/WebServer'
+import Webserver from '../Server/Webserver'
 import * as Koa from 'koa'
 import * as Router from 'koa-router'
 import * as json from 'koa-json'
+import { injectable } from 'inversify'
+import 'reflect-metadata'
 
-export default class KoaWebServer implements WebServer {
+@injectable()
+export default class KoaWebserver implements Webserver {
 
     private koa: Koa
 
